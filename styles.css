@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;  
+}
+
+body {
+  height: 100vh;
+  background-color: #26624f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #164b3a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.user-text {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.user-input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.user-input {
+  width: 85%;
+  padding: 0.4rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+
+.search-btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #299f5d;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  background: conic-gradient(#299f5d var(--progress-degress, 40%), #283a2e 0%);
+}
+
+.circle span {
+  position: relative;
+  z-index: 2;  
+}
+
+.stats-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 80%;
+  max-width: 250px;
+  background-color: #299f5d;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.15s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-title {
+  margin-bottom: 3px;
+}
